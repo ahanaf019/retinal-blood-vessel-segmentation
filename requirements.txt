@@ -3,3 +3,8 @@ tqdm
 torch
 imageio
 albumentations
+numpy
+sklearn
+tensorflow
+keras
+pandas

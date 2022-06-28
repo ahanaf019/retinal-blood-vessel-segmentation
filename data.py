@@ -80,8 +80,8 @@ def augemnt_data(images, masks, save_path, augment=True):
         # i = image, m = mask 
         index = 0
         for i, m in zip(X, Y):
-            cv.resize(i, (W, H))
-            cv.resize(m, (W, H))
+            i = cv.resize(i, (512, 512))
+            m = cv.resize(m, (512, 512))
             
             if len(X) == 1:
                 tmp_image_name = f"{name}.bmp"
